@@ -9,6 +9,8 @@ def upload_to_user_photo(instance, filename):
     return f'users/{instance.id}/{filename}'
 
 class Utilisateur(AbstractUser):
+    username = None
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(unique=True)
     nom = models.CharField(max_length=100)
@@ -19,7 +21,7 @@ class Utilisateur(AbstractUser):
 
     # champs Django à personnaliser
     USERNAME_FIELD = 'email'       # on utilise l'email pour se connecter
-    REQUIRED_FIELDS = ['username', 'nom', 'prenoms']  # username est toujours requis par AbstractUser
+    REQUIRED_FIELDS = ['nom', 'prenoms']  # username est toujours requis par AbstractUser
 
     def __str__(self):
         return f'{self.nom} {self.prenoms} ({self.email})'

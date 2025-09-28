@@ -1,0 +1,100 @@
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.pot
+*.mo
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# ------------------------
+# Django
+# ------------------------
+*.sqlite3
+db.sqlite3
+*.pyc
+*.pyo
+*.log
+*.pot
+*.mo
+*.swp
+*.bak
+*.tmp
+media/
+staticfiles/
+static_root/
+
+# Django migrations
+*/migrations/
+!*/migrations/__init__.py
+
+# Secret settings
+*.env
+.env
+
+# ------------------------
+# React Native / Node
+# ------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.expo/
+.expo-shared/
+dist/
+build/
+ios/Pods/
+
+# ------------------------
+# IDE / Editor
+# ------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.iml
+.DS_Store
+*.swp
+Thumbs.db
+
+# ------------------------
+# Coverage / Testing
+# ------------------------
+.coverage
+htmlcov/
+.tox/
+.nox/
+pytest_cache/
+.pytest_cache/
+
+# ------------------------
+# Misc
+# ------------------------
+*.bak
+*.tmp
+*.orig
+*.rej
+
+# Logs
+*.log
+logs/
